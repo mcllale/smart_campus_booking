@@ -79,7 +79,7 @@ class Lecturer(User):
         '''Cancel one of this lecturer's own, still-upcoming bookings.'''
         conn = get_connection()
         cur = conn.cursor()
-        cur.execute("SELECT user_id, date, status FROM bookingsWHERE booking_id = ?", (booking_id,))
+        cur.execute("SELECT user_id, date, status FROM bookings WHERE booking_id = ?", (booking_id,))
         row = cur.fetchone()
         if row is None:
             conn.close()
