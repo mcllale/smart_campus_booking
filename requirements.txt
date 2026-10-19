@@ -1,0 +1,10 @@
+# This project only uses the Python 3.9+ standard library:
+#   - tkinter (GUI)
+#   - sqlite3 (database)
+#   - hashlib, datetime, collections, os
+#
+# No external packages need to be installed. On some Linux distributions
+# tkinter is a separate OS package, not a pip package:
+#   Ubuntu/Debian:  sudo apt-get install python3-tk
+#   Fedora:         sudo dnf install python3-tkinter
+# Windows and macOS installers from python.org include tkinter already.
